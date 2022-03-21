@@ -14,10 +14,7 @@ export default function Cards({ pergunta, resposta, index, callback }) {
     if (botao === "resp-zap") icon = "checkmark-circle";
     callback(icon);
   }
-  // // useState(0) - Card sem ter sido pressionada;
-  // // 1 -- Card/Question
-  // // 2 -- Card
-  // // 3 -- 0 riscado + icone
+  
 
   if (estado === 0) {
     return (
@@ -70,7 +67,7 @@ export default function Cards({ pergunta, resposta, index, callback }) {
           </div>
         </div>
       </div>
-    );
+    ); 
   }
   if (estado === 3) {
     const css = `pergunta ${respBotao}`;
